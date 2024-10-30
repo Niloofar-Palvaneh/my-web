@@ -1061,6 +1061,13 @@ body.dark-theme {
     font-weight: var(--font-medium);
 }
 
+.zustand__logo{
+    width: 30px;
+}
+.technology__name{
+    font-size: 10px;
+}
+
 ::-webkit-scrollbar {
     width: .6rem;
     border-radius: .5rem;
