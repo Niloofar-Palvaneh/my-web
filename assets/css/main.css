@@ -8,7 +8,7 @@
 
     --first-color: hsl(14, 98%, 50%);
     --black-color: hsl(0, 0%, 0%);
-    --black-color-light: hsl(0, 0%, 40%);
+    --black-color-light: hsl(0, 0%, 54%);
     --white-color: hsl(0, 0%, 95%);
     --title-color: hsl(0, 0%, 0%);
     --text-color: hsl(0, 0%, 35%);
@@ -471,9 +471,10 @@ body.dark-theme {
 
 .home__description {
     direction: rtl;
-    text-align: center;
+    /* text-align: center; */
     color: var(--title-color);
     margin-bottom: 1.5rem;
+    text-align: justify;
 }
 
 .home__description b {
@@ -1003,7 +1004,11 @@ body.dark-theme {
     justify-content: center;
     column-gap: .75rem;
 }
-
+.contact__skill-links {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 5px;
+}
 .contact__social-link {
     background-color: var(--black-color-light);
     padding: 6px;
@@ -1012,6 +1017,9 @@ body.dark-theme {
     display: grid;
     place-items: center;
     transition: background-color .3s;
+}
+.contact__social-link__rounded{
+    border-radius: 10px;
 }
 
 .contact__social-link:hover {
@@ -1308,7 +1316,7 @@ body.dark-theme {
 
     .home__name,
     .home__description {
-        text-align: initial;
+        /* text-align: initial; */
     }
 
     .home__name {
